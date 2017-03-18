@@ -1,3 +1,4 @@
 "# duplacapicua-" 
 "# duplacapicuaProjeto" 
 "# ProjectTeamDuplaCapicua" 
+"# projQualidadeDuplaCapicua" 
