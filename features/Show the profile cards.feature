@@ -29,12 +29,12 @@ Feature: Show the profile cards
  Scenario: The profile card doesn't have job
   Given the profile card is not possible show <job>
   When the user accesses the site
-  Then the system should shows "Não é possivel mostrar!"
+  Then the system should show "Não é possivel mostrar!"
 
  Scenario: The profile card doesn't have workplace
   Given the profile card is not possible show <workplace>
   When the user accesses the site
-  Then the system should shows "Não é possivel mostrar!"
+  Then the system should show "Não é possivel mostrar!"
 
  Scenario: The profile card doesn't have LinkedIn
   Given the speaker doesn't have <linkedIn>

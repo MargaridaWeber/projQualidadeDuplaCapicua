@@ -25,47 +25,47 @@ Mónica Francisco    | IP Erasmus - Learning Computer Programming in Virtual Envi
   When the user clicks on the profile card
   Then the system should show a page with speaker details who clicked with  <name> , <workplace>, <job>,<working experience>,<education>, 
 
- Scenario: The details of profile card does'nt have photo
-  Given is not possible show <photo>
+ Scenario: The details of profile card don't have photo
+  Given is not possible to show <photo>
   When the user clicks on the profile card
   Then the system should show a "imagedefault.jpg"
 
- Scenario: The profile card doesn't have name
+ Scenario: The profile card doesn't have a name
   Given the profile card is not possible show <name>
   When the user clicks on the profile card
   Then the system should say "Anónimo"
 
- Scenario: The profile card doesn't have job
-  Given is not possible show <job>
+ Scenario: The profile card doesn't have a job
+  Given is not possible to show <job>
   When the user clicks on the profile card
   Then the system should shows "Não é possivel mostrar!"
 
- Scenario: The profile card doesn't have workplace
-  Given the profile card is not possible show <workplace>
+ Scenario: The profile card doesn't have a workplace
+  Given the profile card is not possible to show <workplace>
   When the user accesses the site
   Then the system should shows "Não é possivel mostrar!"
 
- Scenario: The details of profile card doesn´t have working experience
-   Given is not possible show <working experience>
+ Scenario: The details of profile card don't have working experience
+   Given is not possible to show <working experience>
    When the user clicks on the profile card
    Then the system shouldn´t show this section
 
- Scenario: The details of profile card doesn´t have education
+ Scenario: The details of profile card don't have education
    Given is not possible show <education>
    When the user clicks on the profile card
    Then the system shouldn´t show this section
 
-Scenario: The details of profile card doesn´t have projects
-   Given is not possible show <projects>
+Scenario: The details of profile card don't have projects
+   Given is not possible to show <projects>
    When the user clicks on the profile card
    Then the system shouldn´t show this section
 
-Scenario: The details of profile card doesn´t have certifications and awards
-   Given is not possible show <certifications and awards>
+Scenario: The details of profile card don't have certifications and awards
+   Given is not possible to show <certifications and awards>
    When the user clicks on the profile card
    Then the system shouldn´t show this section
 
-Scenario: The details of profile card doesn´t have skills
+Scenario: The details of profile card don't have skills
    Given is not possible show <skills>
    When the user clicks on the profile card
    Then the system shouldn´t show this section
