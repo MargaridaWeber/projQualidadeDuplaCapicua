@@ -9,7 +9,7 @@ Scenario: The speaker has an associated email
 Scenario: The speaker doesn't have an associated email
   Given the speaker doesn't have <email>
   When The user clicks on email button
-  Then the system shouldn¥t do any action 
+  Then the system shouldn¬¥t do any action 
 
 
 Scenario: The user introduces the required information
@@ -22,13 +22,13 @@ Scenario: The user doesn't introduces the required information
   Given the user is on the form
     And the user doesn't fill the required information
   When the user clicks on send button on the form 
-  Then the system should say "A informaÁ„o obrigatÛria n„o est· preenchida"
+  Then the system should say "A informa√ß√£o obrigat√≥ria n√£o est√° preenchida"
 
 Scenario: The user enters a wrong email
   Given the user is on the form
     And the user enters a wrong email
   When the user clicks on send button on the form 
-  Then the system should say "O seu email est· errado!"
+  Then the system should say "O seu email est√° errado!"
 
 Scenario: The user has canceled the operation
   Given the user has canceled the operation
@@ -37,10 +37,10 @@ Scenario: The user has canceled the operation
 
 
 
-  | photo                         | name               | job                |workplace                      |linkedIn                                                      |facebook                                              |instagram                                                |email
- | Ana Margarida Weber's photo   | Ana Margarida Weber|Estudante do MEI-CM |Instituto PolitÈcnico de Leiria|https://www.linkedin.com/in/anamargaridaweber/                |https://www.facebook.com/margarida.weber.9            |https://www.instagram.com/margarida_weber/?hl=pt         |anamargaridaweber@gmail.com
- | Jo„o Fernandes's photo        | Jo„o Fernandes     |Programador         |Tecmic               |https://www.linkedin.com/in/jo%C3%A3o-fernandes-17b8a7114/    |https://www.facebook.com/joao.fernandes.90281?fref=ts |https://www.instagram.com/joaofpfernandes/?hl=pt         |fernandes-jota@hotmail.com
- | MÛnica Francisco's photo      | MÛnica Francisco   |Estudante do MEI-CM |Instituto PolitÈcnico de Leiria|https://www.linkedin.com/in/m%C3%B3nica-francisco-997746115/  |https://www.facebook.com/monicasmfrancisco?fref=ts    |                                                         |monica.francisco@hotmail.com
+ | photo                         | name               | job                |workplace                      |linkedIn                                                      |facebook                                              |instagram                                                |email
+ | Ana Margarida Weber's photo   | Ana Margarida Weber|Estudante do MEI-CM |Instituto Polit√©cnico de Leiria|https://www.linkedin.com/in/anamargaridaweber/                |https://www.facebook.com/margarida.weber.9            |https://www.instagram.com/margarida_weber/?hl=pt         |anamargaridaweber@gmail.com
+ | Jo√£o Fernandes's photo        | Jo√£o Fernandes     |Programador         |Tecmic                         |https://www.linkedin.com/in/jo%C3%A3o-fernandes-17b8a7114/    |https://www.facebook.com/joao.fernandes.90281?fref=ts |https://www.instagram.com/joaofpfernandes/?hl=pt         |fernandes-jota@hotmail.com
+ | M√≥nica Francisco's photo      | M√≥nica Francisco   |Estudante do MEI-CM |Instituto Polit√©cnico de Leiria|https://www.linkedin.com/in/m%C3%B3nica-francisco-997746115/  |https://www.facebook.com/monicasmfrancisco?fref=ts    |                                                         |monica.francisco@hotmail.com
 
 
 
