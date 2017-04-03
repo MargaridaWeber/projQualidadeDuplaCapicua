@@ -4,13 +4,16 @@ Feature: Show the profile cards
  I want to check the profile cards of each member
  So that I can get to know more about each member
 
- Scenario: The profile cards has all the information
+ Scenario Outline: The profile cards has all the information
   Given the page loads
    And there are three speakers
   When the user accesses the site
-  Then the system should show the profile cards of each member with <photo>, <name>, <job>, <workplace>,<linkedIn>,<facebook>,<instagram> and <email> 
+  Then the system should show the profile cards of each member with <photo>, <name>, <job>, <workplace>,<linkedIn>,<facebook>,<instagram> and <email>
 
- | photo                         | name               | job                |workplace                      |linkedIn                                                      |facebook                                              |instagram                                                |email
+  Examples:
+   | photo | name | job | workplace | linkedIn | facebook | instagram | email |
+
+   | photo                         | name               | job                |workplace                      |linkedIn                                                      |facebook                                              |instagram                                                |email
  | Ana Margarida Weber's photo   | Ana Margarida Weber|Estudante do MEI-CM |Instituto Politécnico de Leiria|https://www.linkedin.com/in/anamargaridaweber/                |https://www.facebook.com/margarida.weber.9            |https://www.instagram.com/margarida_weber/?hl=pt         |anamargaridaweber@gmail.com
  | João Fernandes's photo        | João Fernandes     |Programador         |Tecmic		           |https://www.linkedin.com/in/jo%C3%A3o-fernandes-17b8a7114/    |https://www.facebook.com/joao.fernandes.90281?fref=ts |https://www.instagram.com/joaofpfernandes/?hl=pt         |fernandes-jota@hotmail.com
  | Mónica Francisco's photo      | Mónica Francisco   |Estudante do MEI-CM |Instituto Politécnico de Leiria|https://www.linkedin.com/in/m%C3%B3nica-francisco-997746115/  |https://www.facebook.com/monicasmfrancisco?fref=ts    |                                                         |monica.francisco@hotmail.com
@@ -35,6 +38,20 @@ Feature: Show the profile cards
   Given the profile card is not possible show <workplace>
   When the user accesses the site
   Then the system should show "Não é possivel mostrar!"
+
+
+#just an example of the usage of a scenario outline
+ Scenario Outline: The profile card is incomplete
+  Given it is not possible to show <data>
+  When the user accesses the site
+  Then the system should show <nodata>
+  Examples:
+   | data | nodata |
+   | photo | imagedefault.jpg |
+   | name | Anónimo |
+   | job | Não é possiível mostrar! |
+   | workplace | Não é possiível mostrar! |
+
 
  Scenario: The profile card doesn't have LinkedIn
   Given the speaker doesn't have <linkedIn>

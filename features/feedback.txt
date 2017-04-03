@@ -1,0 +1,36 @@
+- Features
+--- The 5 features presented describe the mandatory requirements, plus the extra feature that implies sending email
+--- The scenarios provide the "free text" search
+
+- Scenarios
+--- Several scenarios are extremely generic. "introduces some keyworks" / "should expands the filters" (where is the test
+t assert that all the filters are available?
+#AN EXAMPLE - ONE OF YOUR TESTS RE-WRITTEN
+ Scenario Outline: The profile card is incomplete
+  Given it is not possible to show <data>
+  When the user accesses the site
+  Then the system should show <nodata>
+  Examples:
+   | data | nodata |
+   | photo | imagedefault.jpg |
+   | name | Anónimo |
+   | job | Não é possiível mostrar! |
+   | workplace | Não é possiível mostrar! |
+
+
+- Gherkin
+--- Consistency should be achieved (the feature "search a profile card" uses expressions like "introduces some keywords" when in
+other scenarios of other features, there are specific examples of what can be used - eg. name, photo, URLs...)
+--- Found no backgrounds nor scenario outlines. Could have used them.
+--- Examples tables are provided after "Scenario:" and should be provided after "Scenario Outline:" and are not even
+referred as "Examples:"
+
+
+Version Control System Usage
+- Commit messages are short and almost too-short to be self describing
+--- What was the update conducted in the commit "English Words v2"?
+- One of the members of the team does not appear as contributor of the repository
+--- A balanced throughput of the commits shows an equally distributed work load
+
+English
+- Please revise your written english: verb conjugations and other grammar issues
