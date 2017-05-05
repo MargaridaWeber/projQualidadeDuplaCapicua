@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/test/resources/Search a profile card.feature" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/Show details of a profile card.feature" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/Show the profile cards.feature" charset="US-ASCII" />
+  </component>
+</project>
